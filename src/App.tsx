@@ -1,4 +1,5 @@
 import React from "react";
+import FirstComponent from "./components/FirstComponent";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       {isWorking && <p>Está trabalhando</p>}
       <h3>{userGreeting(name)}</h3>
       {/* <h3>{userGreeting(age)}</h3> NÃO FUNCIONA PORQUE O PARAMETRO ACEITO DEVE SER STRING */}
+      <FirstComponent/>
     </div>
   );
 }
