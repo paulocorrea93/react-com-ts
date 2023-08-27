@@ -1,5 +1,7 @@
 import React from "react";
 import FirstComponent from "./components/FirstComponent";
+import SecondComponent from "./components/SecondComponent";
+import Destructurin from "./components/Destructurin";
 
 function App() {
 
@@ -23,6 +25,19 @@ function App() {
       <h3>{userGreeting(name)}</h3>
       {/* <h3>{userGreeting(age)}</h3> NÃO FUNCIONA PORQUE O PARAMETRO ACEITO DEVE SER STRING */}
       <FirstComponent/>
+      <SecondComponent name="Segundo"/>
+      <Destructurin
+      title = "Título"
+      content="Conteúdo"
+      commentQtd={10}
+      tags={["livros", "politica", "mundo"]}
+      />
+      <Destructurin
+      title = "Título2"
+      content="Conteúdo2"
+      commentQtd={40}
+      tags={["politica", "mundo"]}
+      />
     </div>
   );
 }
